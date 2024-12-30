@@ -62,5 +62,5 @@ cask 'zoom'
 # cask 'zed'
 
 # Adobe-Produkte
-cask 'creative-cloud'
+cask 'adobe-creative-cloud'
 cask 'adobe-acrobat-pro'
