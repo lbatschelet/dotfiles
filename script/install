@@ -6,7 +6,7 @@ set -e
 
 cd "$(dirname $0)"/..
 
-echo "› brew bundle"
+echo "› brew bundle -verbose"
 brew bundle
 
 # find the installers and run them iteratively
