@@ -28,7 +28,7 @@ brew 'pandoc'
 cask '1password'
 cask 'alfred'
 cask 'hiddenbar'
-cask 'mp3tag'
+# cask 'mp3tag' # App herunterladen, da dummerweise da gekauft
 cask 'termius'
 cask 'obsidian'
 cask 'rectangle'
@@ -51,6 +51,7 @@ cask 'whatsapp'
 cask 'zoom'
 cask 'quarto'
 cask 'mactex'
+cask 'google-drive'
 
 # Auskommentierte Anwendungen
 # cask 'airtable'
