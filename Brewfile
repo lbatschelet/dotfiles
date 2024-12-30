@@ -12,6 +12,7 @@ brew 'languagetool'
 brew 'r'
 brew 'python'
 brew 'postgresql@14'
+brew 'pandoc'
 
 # Auskommentierte Kommandozeilen-Tools
 # brew 'cloudflared'
@@ -48,6 +49,8 @@ cask 'handbrake'
 cask 'transmission'
 cask 'whatsapp'
 cask 'zoom'
+cask 'quarto'
+cask 'mactex'
 
 # Auskommentierte Anwendungen
 # cask 'airtable'
