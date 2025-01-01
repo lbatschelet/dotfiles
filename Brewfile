@@ -30,8 +30,6 @@ brew 'jordanbaird-ice'
 # Anwendungen
 cask '1password'
 cask 'alfred'
-cask 'hiddenbar'
-# cask 'mp3tag' # App herunterladen, da dummerweise da gekauft
 cask 'termius'
 cask 'obsidian'
 cask 'rectangle'
