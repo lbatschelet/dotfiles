@@ -15,6 +15,7 @@ brew 'postgresql@14'
 brew 'pandoc'
 brew 'neovim'
 brew 'mas'
+brew 'jordanbaird-ice'
 
 # Auskommentierte Kommandozeilen-Tools
 # brew 'cloudflared'
