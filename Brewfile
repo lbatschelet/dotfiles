@@ -15,7 +15,6 @@ brew 'postgresql@14'
 brew 'pandoc'
 brew 'neovim'
 brew 'mas'
-brew 'jordanbaird-ice'
 
 # Auskommentierte Kommandozeilen-Tools
 # brew 'cloudflared'
@@ -53,6 +52,7 @@ cask 'zoom'
 cask 'quarto'
 cask 'mactex'
 cask 'google-drive'
+cask 'jordanbaird-ice'
 
 # Auskommentierte Anwendungen
 # cask 'airtable'
