@@ -53,6 +53,7 @@ cask 'quarto'
 cask 'mactex'
 cask 'google-drive'
 cask 'jordanbaird-ice'
+cask 'netbirdio/tap/netbird-ui'
 
 # Auskommentierte Anwendungen
 # cask 'airtable'
