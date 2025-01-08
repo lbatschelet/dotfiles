@@ -54,7 +54,7 @@ cask 'mactex'
 cask 'google-drive'
 cask 'jordanbaird-ice'
 cask 'netbirdio/tap/netbird-ui'
-cask 'dropzone'
+# cask 'dropzone'
 
 # Auskommentierte Anwendungen
 # cask 'airtable'
