@@ -31,3 +31,6 @@ mas install 462058435
 
 # Powerpoint
 mas install 462062816
+
+# Dropover
+mas install 1355679052
