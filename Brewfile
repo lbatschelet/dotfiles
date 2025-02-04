@@ -56,6 +56,7 @@ cask 'jordanbaird-ice'
 cask 'netbirdio/tap/netbird-ui'
 cask 'caffeine'
 cask 'expo-orbit'
+cask 'mathpix-snipping-tool'
 # cask 'dropzone'
 
 # Auskommentierte Anwendungen
