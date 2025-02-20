@@ -52,7 +52,7 @@ cask 'visual-studio-code'   # Popular code editor
 # cask 'diffusionbee'        # AI image generation tool
 cask 'handbrake'            # Video transcoder
 cask 'mactex'               # TeX distribution for macOS
-cask 'musescore'            # Music notation software
+# cask 'musescore'            # Music notation software
 cask 'plex'                 # Media server
 # cask 'sonos'               # Controller for Sonos speakers
 cask 'vlc'                  # Media player
