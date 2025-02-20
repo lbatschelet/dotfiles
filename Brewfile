@@ -55,6 +55,7 @@ cask 'mactex'               # TeX distribution for macOS
 # cask 'musescore'            # Music notation software
 cask 'plex'                 # Media server
 # cask 'sonos'               # Controller for Sonos speakers
+cask 'spotify'              # Music Streaming Service
 cask 'vlc'                  # Media player
 
 # Browsers & communication
