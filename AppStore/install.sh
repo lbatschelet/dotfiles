@@ -1,36 +1,50 @@
-# Mac App Store applications
-# AutoMute
-mas install 1118136179
+#!/bin/bash
 
-# mp3tag
-mas install 1532597159
+# Check if 'mas' is installed
+if ! command -v mas &> /dev/null; then
+    echo "'mas' is not installed. Please install it first via 'brew install mas'."
+    exit 1
+fi
 
-# tailscale
-mas install 1475387142
+# List of Mac App Store applications
+APPS=(
+    "1118136179  AutoMute"
+    "1532597159  mp3tag"
+    "1475387142  Tailscale"
+    "1503446680  PastePal"
+    "937984704   Amphetamine"
+    "1534275760  LanguageTool"
+    "363738376   ForScore"
+    "985367838   Outlook"
+    "462054704   Word"
+    "462058435   Excel"
+    "462062816   PowerPoint"
+    "1355679052  Dropover"
+)
 
-# PastePal
-mas install 1503446680
+# Track whether at least one app needs installation
+INSTALL_NEEDED=false
 
-# Amphetamine
-mas install 937984704
+# Iterate through the app list
+for APP in "${APPS[@]}"; do
+    APP_ID=$(echo "$APP" | awk '{print $1}')
+    APP_NAME=$(echo "$APP" | cut -d' ' -f2-)
 
-# LanguageTool
-mas install 1534275760
+    # Check if the app is already installed
+    if mas list | awk '{print $1}' | grep -q "^$APP_ID$"; then
+        continue  # Skip already installed apps
+    fi
 
-# ForScore
-mas install 363738376
+    # If at least one app needs installation, set flag
+    INSTALL_NEEDED=true
 
-# Outlook
-mas install 985367838
+    # Install the app
+    echo "Installing $APP_NAME..."
+    mas install "$APP_ID"
+done
 
-# Word
-mas install 462054704
+# Print final message
+if [ "$INSTALL_NEEDED" = false ]; then
+    echo "All listed Mac App Store apps are already installed. Nothing to do."
+fi
 
-# Excel
-mas install 462058435
-
-# Powerpoint
-mas install 462062816
-
-# Dropover
-mas install 1355679052
