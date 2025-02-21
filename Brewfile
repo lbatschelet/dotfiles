@@ -5,6 +5,7 @@ tap 'homebrew/bundle' # Homebrew bundle support
 
 # Command-line tools
 # brew 'cloudflared'        # Cloudflare tunnel client
+brew 'docker'              # docker
 brew 'ffmpeg'              # Multimedia framework for video/audio processing
 brew 'languagetool'        # Grammar and spell checker
 brew 'mas'                 # macOS App Store CLI
@@ -42,6 +43,7 @@ cask 'zotero'               # Reference manager
 cask 'android-platform-tools' # ADB & fastboot for Android
 cask 'android-studio'       # Android development
 cask 'cursor'               # AI-powered code editor
+cask 'docker'               # Docker desktop
 cask 'expo-orbit'           # Development tool for Expo projects
 cask 'ghostty'              # Fast terminal emulator
 # cask 'intellij-idea'         # JetBrains IDE for Java
