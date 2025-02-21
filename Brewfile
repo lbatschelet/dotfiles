@@ -37,7 +37,8 @@ cask 'rectangle'            # Window management
 cask 'zotero'               # Reference manager
 
 # Development tools
-# cask 'android-platform-tools' # ADB & fastboot for Android
+cask 'android-platform-tools' # ADB & fastboot for Android
+cask 'android-studio'       # Android development
 cask 'cursor'               # AI-powered code editor
 cask 'expo-orbit'           # Development tool for Expo projects
 cask 'ghostty'              # Fast terminal emulator
