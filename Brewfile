@@ -17,6 +17,7 @@ brew 'r'                   # R programming language for statistics
 # brew 'redis'              # In-memory database
 brew 'ruby-build'          # Ruby version management tool
 # brew 'spaceman-diff'      # Git diff viewer
+brew 'supabase/tap/supabase' # supabase cli
 brew 'spark'               # Visualization tool for shell
 # brew 'tailscale'          # VPN service (app version preferred)
 brew 'wget'                # Command-line file downloader
