@@ -9,14 +9,15 @@ brew 'ffmpeg'              # Multimedia framework for video/audio processing
 brew 'languagetool'        # Grammar and spell checker
 brew 'mas'                 # macOS App Store CLI
 brew 'neovim'              # Modern Vim-based text editor
+brew 'node'                # Installs node and expo tools
 brew 'pandoc'              # Universal document converter
 brew 'postgresql@14'       # PostgreSQL database system
 brew 'python'              # Python programming language
 brew 'r'                   # R programming language for statistics
 # brew 'redis'              # In-memory database
-# brew 'ruby-build'         # Ruby version management tool
+brew 'ruby-build'          # Ruby version management tool
 # brew 'spaceman-diff'      # Git diff viewer
-# brew 'spark'              # Visualization tool for shell
+brew 'spark'               # Visualization tool for shell
 # brew 'tailscale'          # VPN service (app version preferred)
 brew 'wget'                # Command-line file downloader
 brew 'yt-dlp'              # YouTube and media downloader
