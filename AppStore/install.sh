@@ -20,6 +20,7 @@ APPS=(
     "462058435   Excel"
     "462062816   PowerPoint"
     "1355679052  Dropover"
+    "497799835   Xcode"
 )
 
 # Track whether at least one app needs installation
