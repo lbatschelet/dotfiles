@@ -28,6 +28,7 @@ cask '1password'            # Password manager
 cask 'alfred'               # Productivity launcher
 # cask 'arq'                 # Backup solution
 # cask 'dropzone'            # Drag-and-drop automation tool
+cask 'github'               # Github Desktop interface
 cask 'google-drive'         # Cloud storage
 # cask 'notion-calendar'     # Notion-integrated calendar
 cask 'mathpix-snipping-tool' # Convert images of equations into LaTeX
