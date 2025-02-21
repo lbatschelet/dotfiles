@@ -37,7 +37,7 @@ fi
 # Check if an Apple ID is logged in
 if ! xcodes account &>/dev/null; then
   info_msg "No Apple Developer account found. Logging in..."
-  if ! xcodes signin; then
+  if ! xcodes auth; then
     error_msg "Apple ID login failed. Ensure you have an active Apple Developer account and have accepted the latest terms at https://developer.apple.com/account."
   fi
 else
