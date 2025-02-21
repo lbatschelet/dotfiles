@@ -31,11 +31,19 @@ error_msg() { echo -e "${COLOR_ERROR}[ERROR] $*${COLOR_RESET}"; exit 1; }
 # Ensure 'xcodes' CLI is installed
 if ! command -v xcodes &>/dev/null; then
   info_msg "Installing 'xcodes' CLI..."
-  brew install xcodes
+    brew install xcodes
 fi
 
 # Ensure latest Xcode version is known
+if ! xcodes list &>/dev/null; then
+  error_msg "Failed to retrieve available Xcode versions. Ensure 'xcodes' is correctly installed and try 'xcodes update'."
+fi
+
 LATEST_XCODE=$(xcodes list | awk 'NR>1 {print $1}' | tail -n1)
+
+if [[ -z "$LATEST_XCODE" ]]; then
+  error_msg "Failed to determine the latest Xcode version. Run 'xcodes update' and try again."
+fi
 if [[ -z "$LATEST_XCODE" ]]; then
   error_msg "Failed to fetch latest Xcode version. Check your network connection or xcodes installation."
 fi
