@@ -46,3 +46,10 @@
 	gpgsign = true
 [user]
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMoHh80xMcDLVC4WeHdbwez6ol8phujeGeosCXXp8QZp
+	name = Bätsch
+	email = 78535538+lbatschelet@users.noreply.github.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
