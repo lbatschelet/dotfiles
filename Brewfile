@@ -5,7 +5,7 @@ tap 'homebrew/bundle' # Homebrew bundle support
 
 # Command-line tools
 # brew 'cloudflared'        # Cloudflare tunnel client
-brew 'docker'              # docker
+# brew 'docker'              # docker dont keep both the cli and desktop version at the same time
 brew 'ffmpeg'              # Multimedia framework for video/audio processing
 brew 'languagetool'        # Grammar and spell checker
 brew 'mas'                 # macOS App Store CLI
