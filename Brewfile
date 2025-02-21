@@ -22,7 +22,7 @@ brew 'spark'               # Visualization tool for shell
 brew 'wget'                # Command-line file downloader
 brew 'yt-dlp'              # YouTube and media downloader
 # brew 'imagemagick'        # Image manipulation software
-
+brew 'xcodes'              # xcode tooling
 # Productivity applications
 cask '1password'            # Password manager
 # cask 'airtable'            # Database/spreadsheet hybrid
