@@ -34,16 +34,6 @@ if ! command -v xcodes &>/dev/null; then
   brew install xcodes
 fi
 
-# Check if an Apple ID is logged in
-if ! xcodes account &>/dev/null; then
-  info_msg "No Apple Developer account found. Logging in..."
-  if ! xcodes auth; then
-    error_msg "Apple ID login failed. Ensure you have an active Apple Developer account and have accepted the latest terms at https://developer.apple.com/account."
-  fi
-else
-  info_msg "Apple Developer account already logged in."
-fi
-
 # Ensure latest Xcode version is known
 LATEST_XCODE=$(xcodes list --latest)
 if [[ -z "$LATEST_XCODE" ]]; then
