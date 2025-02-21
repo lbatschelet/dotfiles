@@ -31,7 +31,6 @@ error_msg() { echo -e "${COLOR_ERROR}[ERROR] $*${COLOR_RESET}"; exit 1; }
 # Ensure 'xcodes' CLI is installed
 if ! command -v xcodes &>/dev/null; then
   info_msg "Installing 'xcodes' CLI..."
-  brew tap RobotsAndPencils/xcodes
   brew install xcodes
 fi
 
