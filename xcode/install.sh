@@ -35,7 +35,7 @@ if ! command -v xcodes &>/dev/null; then
 fi
 
 # Ensure latest Xcode version is known
-LATEST_XCODE=$(xcodes list --latest)
+LATEST_XCODE=$(xcodes list | awk 'NR>1 {print $1}' | tail -n1)
 if [[ -z "$LATEST_XCODE" ]]; then
   error_msg "Failed to fetch latest Xcode version. Check your network connection or xcodes installation."
 fi
