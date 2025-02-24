@@ -71,3 +71,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Created by `pipx` on 2025-02-04 09:34:50
 export PATH="$PATH:/Users/luba/.local/bin"
 export QUARTO_PYTHON=~/.quarto-env/bin/python
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+source ~/.venvs/global/bin/activate
