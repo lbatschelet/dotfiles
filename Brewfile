@@ -35,6 +35,8 @@ cask 'github'               # Github Desktop interface
 cask 'google-drive'         # Cloud storage
 # cask 'notion-calendar'     # Notion-integrated calendar
 cask 'mathpix-snipping-tool' # Convert images of equations into LaTeX
+cask 'proton-pass'          # Proton pass GUI
+cask 'proton-mail-bridge'   # Securely connecting mail clients to proton mail
 cask 'quarto'               # Publishing system for documents and notebooks
 cask 'rectangle'            # Window management
 cask 'zotero'               # Reference manager
