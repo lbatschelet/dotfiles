@@ -77,11 +77,12 @@ cask 'zen-browser'          # Privacy-focused browser
 cask 'zoom'                 # Video conferencing
 
 # System & utilities
-cask 'caffeine'             # Prevents macOS from sleeping
+# cask 'caffeine'             # Prevents macOS from sleeping
 # cask 'netbirdio/tap/netbird-ui' # VPN management UI
 cask 'jordanbaird-ice'      # Windows-like window snapping
 cask 'termius'              # SSH client
 cask 'transmission'         # BitTorrent client
+cask 'logi-options+'
 
 # Adobe products
 cask 'adobe-acrobat-pro'    # PDF reader and editor
