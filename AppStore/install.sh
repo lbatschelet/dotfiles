@@ -19,6 +19,7 @@ APPS=(
     "462054704   Word"
     "462058435   Excel"
     "462062816   PowerPoint"
+    "823766827   OneDrive"
     "1355679052  Dropover"
     "497799835   Xcode"
 )
