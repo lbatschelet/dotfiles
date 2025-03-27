@@ -1,7 +1,7 @@
 cask_args appdir: '/Applications'
 
 # Taps
-tap 'homebrew/bundle' # Homebrew bundle support
+# tap 'homebrew/bundle' # Homebrew bundle support
 
 # Command-line tools
 # brew 'cloudflared'        # Cloudflare tunnel client
