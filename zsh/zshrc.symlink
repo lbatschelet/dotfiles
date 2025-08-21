@@ -1,58 +1,54 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# Enable Powerlevel10k instant prompt
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Shortcut to this dotfiles path is $ZSH
+# Shortcut to this dotfiles path
 export ZSH=$HOME/.dotfiles
 
-# Your project folder that we can `c [tab]` to
+# Your project folder
 export PROJECTS=~/Code
 
-# Stash your environment variables in ~/.localrc
+# Stash environment variables
 if [[ -a ~/.localrc ]]; then
   source ~/.localrc
 fi
 
-# Load all of our zsh files
+# Load all zsh config files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
 
-# Load the path files
+# Load path configs first
 for file in ${(M)config_files:#*/path.zsh}; do
   source $file
 done
 
-# Load everything but the path and completion files
+# Load everything but path & completion
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
   source $file
 done
 
-# Initialize autocomplete here, otherwise functions won't be loaded
+# Autocomplete
 autoload -U compinit
 compinit
 
-# Load every completion after autocomplete loads
+# Load completion configs
 for file in ${(M)config_files:#*/completion.zsh}; do
   source $file
 done
 
 unset config_files
 
-# Better history
+# Better history navigation
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
 
-# Source Powerlevel10k theme
+# Powerlevel10k theme
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # NVM setup
@@ -68,9 +64,24 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# Created by `pipx` on 2025-02-04 09:34:50
+# pipx
 export PATH="$PATH:/Users/luba/.local/bin"
+
+# Quarto
 export QUARTO_PYTHON=~/.quarto-env/bin/python
 
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-source ~/.venvs/global/bin/activate
+# Deactivate automatic venv activation (was overriding asdf!)
+# source ~/.venvs/global/bin/activate
+
+# Docker CLI completions
+fpath=(/Users/luba/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+
+# Java (set once)
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export PATH="$JAVA_HOME/bin:$PATH"
+
+# asdf setup (only once, clean)
+export PATH="$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
+. "$(brew --prefix asdf)/libexec/asdf.sh"
