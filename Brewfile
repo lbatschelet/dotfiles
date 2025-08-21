@@ -58,7 +58,6 @@ cask 'visual-studio-code'   # Popular code editor
 
 # Media & entertainment applications
 # cask 'diffusionbee'        # AI image generation tool
-cask 'handbrake'            # Video transcoder
 cask 'mactex'               # TeX distribution for macOS
 # cask 'musescore'            # Music notation software
 cask 'plex'                 # Media server
