@@ -81,6 +81,7 @@ cask 'jordanbaird-ice'      # Windows-like window snapping
 cask 'termius'              # SSH client
 cask 'transmission'         # BitTorrent client
 cask 'logi-options+'
+cask 'unnaturalscrollwheels'
 
 # Adobe products
 cask 'adobe-acrobat-pro'    # PDF reader and editor
