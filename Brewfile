@@ -45,7 +45,7 @@ cask 'zotero'               # Reference manager
 cask 'android-platform-tools' # ADB & fastboot for Android
 cask 'android-studio'       # Android development
 cask 'cursor'               # AI-powered code editor
-cask 'docker'               # Docker desktop
+# cask 'docker'               # Docker desktop
 cask 'expo-orbit'           # Development tool for Expo projects
 cask 'ghostty'              # Fast terminal emulator
 # cask 'intellij-idea'         # JetBrains IDE for Java
