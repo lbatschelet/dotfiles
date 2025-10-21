@@ -77,7 +77,8 @@ cask 'whatsapp'             # Messaging application
 
 # System & utilities
 # cask 'caffeine'             # Prevents macOS from sleeping
-cask 'jordanbaird-ice'      # Windows-like window snapping
+# cask 'jordanbaird-ice'      # Menu Bar setting
+cask 'bartender'            # Menu Bar organisation
 cask 'termius'              # SSH client
 cask 'transmission'         # BitTorrent client
 cask 'logi-options+'
